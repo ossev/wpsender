@@ -15,14 +15,14 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 import pandas as pd
 
-CHROME_PROFILE_PATH = "user-data-dir=C:\\Users\\osnas\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
+CHROME_PROFILE_PATH = "user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
 
 class HomePageTests(unittest.TestCase):
 
     def setUp(self) -> None:
         
         # self.driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
-        pathChromeDriver = 'C:/Users/osnas/Documents/scripts_python/wpsender/chromedriver.exe'
+        pathChromeDriver = 'C:/Users/admin/projects/wpsender/chromedriver.exe'
         s = Service(pathChromeDriver)
         
         options = webdriver.ChromeOptions()
@@ -31,11 +31,11 @@ class HomePageTests(unittest.TestCase):
         driver = self.driver
         driver.get("https://web.whatsapp.com/")
         driver.maximize_window()
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(30)
 
     def test_getMsgInterface(self):
         driver = self.driver
-        driver.implicitly_wait(5)
+        driver.implicitly_wait(30)
         # contact_errors = pd.DataFrame(columns=["celular"])
 
         # contact_names = ['Daniel Lesmes','Humbewrewassfd','Fabio Sarmiento']
@@ -100,6 +100,7 @@ class HomePageTests(unittest.TestCase):
 
         dfNoenviados = pd.DataFrame(noEnviados)
         dfNoenviados.to_csv('WpsNoEnviados.csv')
+        time.sleep(10)
     def tearDown(self) -> None:
         self.driver.quit()
 
