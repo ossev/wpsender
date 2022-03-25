@@ -49,7 +49,7 @@ class HomePageTests(unittest.TestCase):
         viajes = pd.read_excel("Viajes.xlsx")
 
         # Image to send
-        filepath = 'C:/Users/admin/projects/wpsender/images/VariosJueves.png'
+        filepath = 'C:/Users/admin/projects/wpsender/images/VariosVierne2.png'
         # filepath = 'C:/Users/admin/projects/wpsender/images/DownLoadUp.jpeg'
 
         text_msg = 'Para más información sobre *cargas disponibles* contáctanos por el siguiente link https://wa.me/573160101982. Para *soporte* al conductor contáctanos por el siguiente link https://wa.me/573160184923. Descarga nuestra app en el siguiente link: https://bit.ly/3khJFXQ'
