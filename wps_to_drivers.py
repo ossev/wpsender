@@ -24,10 +24,10 @@ viajes = pd.read_excel("Viajes.xlsx")
 
 dispatcher = [
         # 'bun',
-        # 'bog',
+        'bog',
         # 'ctg',
         # 'cali',
-        'soporte_teclogi',
+        # 'soporte_teclogi',
     ]
 
 # dirección de los archivos de origen
@@ -188,165 +188,165 @@ class HomePageTests(unittest.TestCase):
             with open(filepath,'rb') as f:
                 tb.send_photo(chat_id, f,caption=text)
 
-    def test_send_facebook(self):
-        driver = self.driver
-        driver.implicitly_wait(30)
-        driver.get("https://www.facebook.com/groups/1044859782961088")
-        driver.maximize_window()
+    # def test_send_facebook(self):
+    #     driver = self.driver
+    #     driver.implicitly_wait(30)
+    #     driver.get("https://www.facebook.com/groups/1044859782961088")
+    #     driver.maximize_window()
 
-        # user = 3156460636
-        # user_path = '//*[@id="login_form"]/div[2]/div[1]/label/input' 
-        # user_input = driver.find_element(By.XPATH, user_path)
-        # user_input.clear()
-        # user_input.send_keys(user)
+    #     # user = 3156460636
+    #     # user_path = '//*[@id="login_form"]/div[2]/div[1]/label/input' 
+    #     # user_input = driver.find_element(By.XPATH, user_path)
+    #     # user_input.clear()
+    #     # user_input.send_keys(user)
 
-        # password = 'Teclogi.2022'
-        # password_path = '//*[@id="login_form"]/div[2]/div[2]/label/input'
-        # password_input = driver.find_element(By.XPATH, password_path)
-        # password_input.clear()
-        # password_input.send_keys(password)
+    #     # password = 'Teclogi.2022'
+    #     # password_path = '//*[@id="login_form"]/div[2]/div[2]/label/input'
+    #     # password_input = driver.find_element(By.XPATH, password_path)
+    #     # password_input.clear()
+    #     # password_input.send_keys(password)
 
-        # login_button_path = '//*[@id="login_form"]/div[2]/div[3]/div/div/div[1]/div/span/span'
-        # login_button = driver.find_element(By.XPATH,login_button_path)
-        # login_button.click()
+    #     # login_button_path = '//*[@id="login_form"]/div[2]/div[3]/div/div/div[1]/div/span/span'
+    #     # login_button = driver.find_element(By.XPATH,login_button_path)
+    #     # login_button.click()
 
-        text=""
-        if (dispatcher.count('bog')):
-            text = """Para mayor información contacta a:
+    #     text=""
+    #     if (dispatcher.count('bog')):
+    #         text = """Para mayor información contacta a:
 
-            3174051992
-            https://wa.me/573174051992
+    #         3174051992
+    #         https://wa.me/573174051992
 
-            3058676657
-            https://wa.me/573058676657
+    #         3058676657
+    #         https://wa.me/573058676657
 
-            3212884773
-            https://wa.me/573212884773
+    #         3212884773
+    #         https://wa.me/573212884773
 
-            3212573885
-            https://wa.me/573212573885
+    #         3212573885
+    #         https://wa.me/573212573885
 
-            3160184921
-            https://wa.me/573160184921
+    #         3160184921
+    #         https://wa.me/573160184921
 
-            3160101982
-            https://wa.me/573160101982
+    #         3160101982
+    #         https://wa.me/573160101982
 
-            Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
+    #         Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
 
-            Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
+    #         Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
 
-            Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
+    #         Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
 
-            Te esperamos!!!"""
+    #         Te esperamos!!!"""
 
-        if (dispatcher.count('ctg')):
-            text="""Para mayor información contacta a:
+    #     if (dispatcher.count('ctg')):
+    #         text="""Para mayor información contacta a:
 
-            3184603246
-            https://wa.me/573184603246
+    #         3184603246
+    #         https://wa.me/573184603246
 
-            3156481630
-            https://wa.me/573156481630
+    #         3156481630
+    #         https://wa.me/573156481630
 
-            3160272525
-            https://wa.me/573160272525
+    #         3160272525
+    #         https://wa.me/573160272525
 
-            Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
+    #         Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
 
-            Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
+    #         Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
 
-            Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
+    #         Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
 
-            Te esperamos!!!"""
+    #         Te esperamos!!!"""
 
-        if (dispatcher.count('cali')):
-            text="""Para mayor información contacta a:
+    #     if (dispatcher.count('cali')):
+    #         text="""Para mayor información contacta a:
 
-            3176439755
-            https://wa.me/573176439755
+    #         3176439755
+    #         https://wa.me/573176439755
 
-            3160101982
-            https://wa.me/573160101982
+    #         3160101982
+    #         https://wa.me/573160101982
 
-            3160184921
-            https://wa.me/573160184921
+    #         3160184921
+    #         https://wa.me/573160184921
 
-            3160242167
-            https://wa.me/573160242167
+    #         3160242167
+    #         https://wa.me/573160242167
 
-            Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
+    #         Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
 
-            Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
+    #         Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
 
-            Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
+    #         Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
 
-            Te esperamos!!!"""
+    #         Te esperamos!!!"""
 
-        if (dispatcher.count('bun')): 
-            text="""Para mayor información contacta a:
+    #     if (dispatcher.count('bun')): 
+    #         text="""Para mayor información contacta a:
 
-            3160101982
-            https://wa.me/573160101982
+    #         3160101982
+    #         https://wa.me/573160101982
 
-            3175179655
-            https://wa.me/573175179655
+    #         3175179655
+    #         https://wa.me/573175179655
 
-            3160242164
-            https://wa.me/573160242164
+    #         3160242164
+    #         https://wa.me/573160242164
 
-            3160184921
-            https://wa.me/573160184921
+    #         3160184921
+    #         https://wa.me/573160184921
 
-            3156563947
-            https://wa.me/573156563947
+    #         3156563947
+    #         https://wa.me/573156563947
 
-            Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
+    #         Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
 
-            Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
+    #         Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
 
-            Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
+    #         Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
 
-            Te esperamos!!!"""
+    #         Te esperamos!!!"""
 
-        if (dispatcher.count('soporte_teclogi')):
-            text="""Para mayor información contacta a:
+    #     if (dispatcher.count('soporte_teclogi')):
+    #         text="""Para mayor información contacta a:
             
-            Soporte App Teclogi Cargo
-            3156460636
-            https://wa.me/573156460636
+    #         Soporte App Teclogi Cargo
+    #         3156460636
+    #         https://wa.me/573156460636
 
-            Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
+    #         Descarga nuestra app para Android en el siguiente link: https://bit.ly/3khJFXQ
 
-            Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
+    #         Descarga nuestra app para Huawei en el siguiente link: https://appgallery.huawei.com/app/C104912645
 
-            Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
+    #         Conéctate a nuestro grupo de Télegram a través de https://t.me/cargateclogi
 
-            Te esperamos!!!"""
+    #         Te esperamos!!!"""
 
-        for img in images:
-            # Image to send
-            filepath = 'C:/Users/Teclovers/projects/wpsender/images/outdir/{}'.format(img)
+    #     for img in images:
+    #         # Image to send
+    #         filepath = 'C:/Users/Teclovers/projects/wpsender/images/outdir/{}'.format(img)
 
-            # ubicar y dar click en el ícono para crear un nuevo post
-            add_post_xpath = "//*[text()='Photo/video']"
-            add_post = driver.find_element(By.XPATH,add_post_xpath)
-            add_post.click()
+    #         # ubicar y dar click en el ícono para crear un nuevo post
+    #         add_post_xpath = "//*[text()='Photo/video']"
+    #         add_post = driver.find_element(By.XPATH,add_post_xpath)
+    #         add_post.click()
 
-            input_photo_xpath = '//input[@accept="image/*,image/heif,image/heic,video/*,video/mp4,video/x-m4v,video/x-matroska,.mkv"]'
-            input_photo = driver.find_element(By.XPATH, input_photo_xpath)
-            input_photo.send_keys(filepath)
+    #         input_photo_xpath = '//input[@accept="image/*,image/heif,image/heic,video/*,video/mp4,video/x-m4v,video/x-matroska,.mkv"]'
+    #         input_photo = driver.find_element(By.XPATH, input_photo_xpath)
+    #         input_photo.send_keys(filepath)
 
-            element = driver.switch_to.active_element
-            element.click()
-            element.send_keys(text)
+    #         element = driver.switch_to.active_element
+    #         element.click()
+    #         element.send_keys(text)
 
-            # ubicar y dar click en el botón para guardar la publicación
-            add_button_save_xpath = "//*[text()='Post']"
-            add_button_save = driver.find_element(By.XPATH,add_button_save_xpath)
-            add_button_save.click()
+    #         # ubicar y dar click en el botón para guardar la publicación
+    #         add_button_save_xpath = "//*[text()='Post']"
+    #         add_button_save = driver.find_element(By.XPATH,add_button_save_xpath)
+    #         add_button_save.click()
 
-            time.sleep(30)
+    #         time.sleep(40)
 
     def test_getMsgInterface(self):
 
